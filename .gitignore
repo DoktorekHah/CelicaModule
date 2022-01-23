@@ -1,3 +1,9 @@
+# Documentation - drawio
+*.drawio
+
+# Code JanuszCustom
+JanuszCustom.c.OLD
+
 # Prerequisites
 *.d
 
