@@ -4,13 +4,12 @@
 #include <Wire.h>
 #include <Adafruit_SSD1306.h>
 #include "Configuration.h"
+#define countof(a) (sizeof(a) / sizeof(a[0]))
 
 void rtc_date_time(int value_delay);
 
 ThreeWire myWire(PIN_D6_RTC_DAT, PIN_D8_RTC_CLK, PIN_D4_RTC_RST); // IO, SCLK, CE (INTERRPUT)
 RtcDS1302<ThreeWire> Rtc(myWire);
-
-#define countof(a) (sizeof(a) / sizeof(a[0]))
 
 void printDateTime(const RtcDateTime& dt){
     char datestring[20];
