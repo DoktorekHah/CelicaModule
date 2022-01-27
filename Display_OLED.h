@@ -8,7 +8,6 @@
 //Config
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-
 //Config
 
 //Show information on OLED display
