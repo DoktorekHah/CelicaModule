@@ -65,7 +65,6 @@ Pins_Analog **/
 //DisplayOLED config
   if(!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
     Serial.println(F("SSD1306 allocation failed"));
-    for(;;); // Don't proceed, loop forever
   }
 //DisplayOLED config
 
@@ -74,7 +73,7 @@ Pins_Analog **/
   MPU6050_Init();
 //MPU_6050
 
-Map_Engine_First();
+Map_Engine_First(); //
 
 }
 
