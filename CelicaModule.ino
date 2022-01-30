@@ -58,8 +58,8 @@ Pins_Analog **/
 //Serial_config
 
 //RTC config
-  RtcDateTime compiled = RtcDateTime(__TIME__);
   Rtc.Begin();
+  //RtcDateTime compiled = RtcDateTime(__TIME__);
 //RTC config
 
 //DisplayOLED config
@@ -73,11 +73,12 @@ Pins_Analog **/
   MPU6050_Init();
 //MPU_6050
 
-Map_Engine_First(); //
+//Map_Engine_First(); //
 
 }
 
 void loop() {
   //Accelerometer();
   rtc_date_time(DELAY_OLED); //Run o'clock
+  //Serial.println(DELAY_OLED);
 }

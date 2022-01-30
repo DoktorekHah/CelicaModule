@@ -18,13 +18,12 @@ void printDateTime(const RtcDateTime& dt){
             countof(datestring),
             PSTR("%02u:%02u:%02u"),
             dt.Hour(), dt.Minute(), dt.Second() );
-    Serial.print(datestring);
+    Serial.println(datestring);
     Display_Write(datestring, DELAY_OLED, TEXT_SIZE_4);
 }
   
 void rtc_date_time(int value_delay){
-    RtcDateTime now = Rtc.GetDateTime();
+    RtcDateTime now = Rtc.GetDateTime(); 
     printDateTime(now);
-    Serial.print(now);
     delay(value_delay);
 }
