@@ -1,10 +1,12 @@
+#ifndef CONFIGURATION_H
+#define CONFIGURATION_H
+
 //DEBUG MODE
 //#define DEBUG
-#define DEBUG_MPU  //MPU6050_Debug
-#define DEBUG_SENSOR_OIL
-//#define DEBUG_EGT
+//#define DEBUG_MPU  //MPU6050_Debug
+//#define DEBUG_SENSOR_OIL
+#define DEBUG_EGT
 //DEBUG MODE
-void Display_Write(String value_print, uint16_t value_delay, int textSize);
 
 //Pins 
 #define PIN_D2_CHANGE_COLOR_AUTOGAUGE    2
@@ -18,8 +20,8 @@ void Display_Write(String value_print, uint16_t value_delay, int textSize);
 #define PIN_D20_SDA_OLED_MPU6050         20
 #define PIN_D21_SCL_OLED_MPU6050         21
 #define PIN_D38_CHANGE_MAPS              38
-#define PIN_D40_DISPLAY_GAUGE            42
-#define PIN_D42_LC_ACTIVE                42  
+#define PIN_D42_DISPLAY_GAUGE            42
+//#define PIN_D42_LC_ACTIVE                42  
 #define PIN_D44_BUTTON_WHEEL_RIGHT       44
 #define PIN_D46_BUTTON_WHEEL_LEFT        46
 #define PIN_D47_CRUISE_CONTROL_UP        47
@@ -105,6 +107,7 @@ void Display_Write(String value_print, uint16_t value_delay, int textSize);
 #define TEXT_SIZE_3   3
 #define TEXT_SIZE_3_5 3.5
 #define TEXT_SIZE_4   4
+#define OLED_RESET     4
 //OLED
 
 //MPU6050
@@ -128,3 +131,4 @@ void Display_Write(String value_print, uint16_t value_delay, int textSize);
 #define ADC_RESOLUTION 10  // set to ADC bit resolution, 10 is default
 //EGT
  
+#endif
