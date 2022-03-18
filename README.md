@@ -3,3 +3,5 @@
 :name: CelicaModule
 :description: 
 :tags: celica
+
+= CelicaModule
